@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionnaire Website</title>
+    <title>Republic Day Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Avaali Republic Day Celebrations!</h1>
-    <form id="questionForm">
-        <label for="answer1">What is your favorite color?</label>
-        <input type="text" id="answer1" required>
+    <div class="container">
+        <h1>Republic Day Quiz</h1>
+        <audio id="backgroundMusic" autoplay loop>
+            <source src="republic_day_music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <form id="questionForm">
+            <label for="question1">1. What is the capital of India?</label><br>
+            <input type="radio" name="question1" value="a" required> a) Delhi<br>
+            <input type="radio" name="question1" value="b"> b) Mumbai<br>
+            <input type="radio" name="question1" value="c"> c) Kolkata<br>
 
-        <label for="answer2">What is the capital of France?</label>
-        <input type="text" id="answer2" required>
+            <!-- Add more questions as needed -->
 
-        <!-- Add more questions as needed -->
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
 
-        <button type="button" onclick="generateCode()">Submit</button>
-    </form>
-
-    <div id="codeSection" style="display:none;">
-        <h2>Success!</h2>
-        <p>Your code is: <span id="generatedCode"></span></p>
+        <div id="codeSection" style="display:none;">
+            <h2>Success!</h2>
+            <p>Your code is: <span id="generatedCode"></span></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
