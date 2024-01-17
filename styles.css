@@ -10,7 +10,7 @@ body {
 }
 
 .background-image {
-    background: url('indian-flag.jpg') no-repeat center center fixed;
+    background: url('https://shivagowdavarada.github.io/RepublicDayEvent/indian_flag.jpg') no-repeat center center fixed;
     background-size: cover;
     position: fixed;
     width: 100%;
@@ -27,12 +27,15 @@ body {
 }
 
 .logo img {
-    max-width: 100px; /* Adjust the size of the logo as needed */
+    max-width: 150px; /* Adjust the size of the logo as needed */
     height: auto;
 }
 
 form {
     margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for better visibility */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 button {
