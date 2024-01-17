@@ -32,10 +32,26 @@ body {
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background for better visibility */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     padding: 20px;
     border-radius: 10px;
+}
+
+label {
+    background-color: #ffffff; /* White background for the question */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+input {
+    margin-bottom: 10px;
 }
 
 button {
